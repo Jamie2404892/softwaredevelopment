@@ -1,11 +1,13 @@
 default_player_stats = {"level" : 0, "health" : 1, "experience" : 0}
 
+
 players = {"player1" : {
             "level" : 0,
             "health" : 100,
             "experience" : 0,
             }}
 
+#levels up the player when ran
 def level_up(player_name):
     players[player_name]["level"] += 1
 

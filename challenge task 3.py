@@ -1,8 +1,9 @@
+#table containing stock and prices of items
 shop_items = {"tomato" : {"price" : 10, "stock" : 3},
               "carrot" : {"price" : 2, "stock" : 6},
               "lettuce" : {"price" : 5, "stock" : 8},
               }
-
+#function to buy items
 def buy_items(shop_items, item_name, player_gold):
     if shop_items[item_name]["stock"] > 0:
         if player_gold >= shop_items[item_name]["price"]:
